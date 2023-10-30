@@ -1,0 +1,76 @@
+{% extends "basic_model/basic.html" %}
+
+{% block title %} Accountancy website {% endblock %}
+{% block head %}
+  {{ parent() }}
+  <link rel="stylesheet" href="/assets/css/static/home.css">
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero_text">
+    <div class="hero_text_title"><span>Get your finances right</span></div>
+    <div class="hero_text_description"><span>Get your finances right with Accountancy Cloud. We offer the best accounting, R&D credits and CFO services for ambitious businesses who want to grow.</span></div>
+    <div class="hero_text_talk">
+      <span>Switching to us is simple</span>
+      <button>Talk to us</button>
+    </div>
+  </div>
+  <div class="hero_image">
+    <img src="/assets/images/laptop.png" alt="laptop">
+  </div>
+</section>
+<section class="hero_second">
+  <div class="hero_img">
+    <img src="/assets/images/procent.png" alt="procent %">
+  </div>
+  <div class="hero_second_text">
+    <div class="second_title"><span>The best finance stack for entrepreneurs</span></div>
+    <div class="second_description"><span>70% of companies switch to us from their DIY or legacy system. Now, get your bookkeeping, tax prep and CFO problems, solved. Complete our <a href="">contact form</a>, and find out why 9 out of 10 customers recommend us.</span></div>
+  </div>
+</section>
+<section class="hero_third">
+  <div class="third_title"><span>Why Switch?</span></div>
+  <div class="third_cards">
+    <div class="cards">
+      <div class="switch_card">
+        <div class="switch_card_img">
+          <img src="/assets/images/chart.png" alt="">
+        </div>
+        <div class="switch_card_title"><span>Powerful software</span></div>
+        <div class="switch_card_desc"><span>Included in our service, each customer gets in-house software to access live financial dashboards and real-time management reports.</span></div>
+      </div>
+      <div class="switch_card">
+        <div class="switch_card_img">
+          <img src="/assets/images/chart_2.png" alt="">
+        </div>
+        <div class="switch_card_title"><span>Powerful software</span></div>
+        <div class="switch_card_desc"><span>Included in our service, each customer gets in-house software to access live financial dashboards and real-time management reports.</span></div>
+      </div>
+      <div class="switch_card">
+        <div class="switch_card_img">
+          <img src="/assets/images/women.png" alt="">
+        </div>
+        <div class="switch_card_title"><span>Powerful software</span></div>
+        <div class="switch_card_desc"><span>Included in our service, each customer gets in-house software to access live financial dashboards and real-time management reports.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="logo_hero">
+  <img src="/assets/images/logos.png" alt="">
+</section>
+<section class="ready">
+  <div class="ready_block">
+    <div class="ready_block_content">
+      <div class="ready_text">
+        <span>Ready to Switch? It's simple.</span><br />
+        <span>Speak to an expert today</span>
+      </div>
+      <div class="ready_btn">
+        <button>Get Started</button>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

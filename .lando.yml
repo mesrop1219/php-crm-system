@@ -1,0 +1,9 @@
+name: accountancy-application
+recipe: lamp
+config:
+  webroot: .
+  php: "8.1"
+  database: "mysql"
+services:
+  phpmyadmin:
+    type: phpmyadmin

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/images/logo_favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/globals.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>{% block title %}{% endblock %}</title>
+</head>
+{% endblock %}
+<body>
+<div class="container">
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="/"><img src="/assets/images/logo.png" alt="accountancy logo"></a>
+    </div>
+    <ul class="navbar_links">
+      <li><a href="">Home</a></li>
+      <li><a href="">How it works</a></li>
+      <li><a href="">What we do</a></li>
+      <li><a href="">Who we help</a></li>
+      <li><a href="">Resources</a></li>
+      <li id="login" class="login"><a href="/auth/login"><button>Login</button></a></li>
+      <li id="login" class="logout" style="margin-left: 20px;"><a href="/panel"><button>Go to panel</button></a></li>
+      <li id="experts"><a href=""><button>Talk to an Expert</button></a></li>
+    </ul>
+  </nav>
+</header>
+{% block content %}
+{% endblock %}
+</div>
+<script src="/assets/js/script.js"></script>
+</body>
+</html>

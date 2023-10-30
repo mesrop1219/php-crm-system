@@ -1,0 +1,30 @@
+{% extends "basic_model/panel_basic.html" %}
+
+{% block title %} todo for panel {% endblock %}
+{% block head %}
+  {{ parent() }}
+  <link rel="stylesheet" href="/assets/css/panel/todo.css">
+{% endblock %}
+
+{% block content %}
+<div class="todo_form">
+  <div class="todo_title"><span>Set todo for you</span></div>
+  <form action="/todo/create" method="post">
+    <div class="inp_line"><input type="text" name="todo" required placeholder="set your todo"></div>
+    <div class="inp_btn"><button type="submit">Submit</button></div>
+    <div class="form_error" style="margin-top: 20px;"><span>{{ error }}</span></div>
+  </form>
+</div>
+<div class="todo_containers">
+  {% for todo in todos %}
+    <div class="todo_item">
+      <span>{{ todo.todo }}</span>
+      <div class="todo_block">
+        <a href="/todo/drop?id={{ todo.id }}"><div class="todo_delete"><span>X</span></div></a>
+        <a href="/todo/update?todo={{ todo.todo }}&id={{ todo.id }}"><div class="todo_delete"><span><i class="fa-regular fa-pen-to-square"></i></span></div></a>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.navbar_links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_links li:nth-child(2n) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar_links li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+}
+
+#logout button {
+  width: 120px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.todo_form {
+  max-width: 400px;
+  margin: 50px auto 0 auto;
+}
+
+.todo_title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.inp_line {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.inp_line input {
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.inp_btn button {
+  width: 130px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.todo_containers {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.todo_item {
+  height: 50px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.todo_item a {
+  text-decoration: none;  
+}
+
+.todo_delete {
+  margin-left: 10px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.todo_block {
+  display: flex;
+  align-items: center;
+}
